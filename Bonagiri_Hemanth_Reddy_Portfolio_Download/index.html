@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#06101f">
+<meta name="description" content="Bonagiri Hemanth Reddy — B.Tech Computer Science student exploring Artificial Intelligence and Machine Learning.">
+<title>Bonagiri Hemanth Reddy | AI & ML Portfolio</title>
+<style>
+:root{--bg:#06101f;--panel:#0b1a2d;--panel2:#10243b;--text:#f4f8ff;--muted:#aabbd0;--cyan:#19d8f5;--blue:#3288ff;--line:#1b3652;--mono:"Courier New",monospace}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:82px}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,Arial,sans-serif;line-height:1.65}
+body:before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background-image:linear-gradient(#62cfff09 1px,transparent 1px),linear-gradient(90deg,#62cfff09 1px,transparent 1px);background-size:56px 56px}
+a{color:inherit;text-decoration:none}.wrap{width:min(1140px,90%);margin:auto}
+header{height:76px;position:sticky;top:0;z-index:20;background:#06101feF;border-bottom:1px solid var(--line);backdrop-filter:blur(14px)}
+nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font-weight:900;font-size:25px;letter-spacing:-2px}.logo span{color:var(--cyan)}
+.navlinks{display:flex;gap:23px;align-items:center;font:11px var(--mono);letter-spacing:1px;color:#c0d0e2}.navlinks a:hover,.navlinks a.active{color:var(--cyan)}
+.nav-cta,.btn{display:inline-flex;align-items:center;gap:9px;padding:10px 16px;border:1px solid var(--cyan);border-radius:30px;font:11px var(--mono);letter-spacing:1px;text-transform:uppercase;transition:.25s}
+.nav-cta:hover,.btn:hover{background:var(--cyan);color:#04101d;box-shadow:0 0 22px #19d8f566}
+.menu{display:none;background:none;border:0;color:white;font-size:25px}
+.hero{min-height:680px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px;padding:65px 0 75px;position:relative}
+.hero:before{content:"";position:absolute;inset:0 -5.5vw;background:linear-gradient(90deg,#06101f 0%,#06101fdd 40%,#06101f35 100%),url('assets/ai-hero-background.jpg') center right/cover no-repeat;z-index:-1;opacity:.92}
+.eyebrow{font:12px var(--mono);letter-spacing:3px;color:var(--cyan);text-transform:uppercase}.eyebrow:before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--cyan);margin:0 12px 1px 0;box-shadow:0 0 12px var(--cyan)}
+h1{font-size:clamp(44px,6.6vw,78px);line-height:.99;letter-spacing:-4px;margin:23px 0 18px;font-weight:850}h1 span{color:var(--cyan)}
+.role{font-size:19px;color:#d4e5f7;margin:0 0 14px}.intro{color:#afc0d4;max-width:500px;font-size:15px;line-height:1.85}
+.topic-row{display:flex;flex-wrap:wrap;gap:10px;margin:23px 0 29px}.topic{font:10px var(--mono);letter-spacing:1px;color:#c6e7f4;border:1px solid #24506b;background:#07192bbd;padding:7px 10px;border-radius:20px}
+.btn{background:var(--cyan);color:#04101d;font-weight:bold}.btn.ghost{background:transparent;color:#e9f5ff;border-color:#4d7897;margin-left:8px}
+.hero-side{min-height:360px;display:flex;align-items:flex-end;justify-content:flex-end}.hero-note{padding:15px 18px;border-left:2px solid var(--cyan);background:#06101fb8;backdrop-filter:blur(8px);font:11px var(--mono);letter-spacing:2px;color:#d3e9f9}
+section{padding:82px 0;border-bottom:1px solid var(--line)}.section-head{display:flex;align-items:center;gap:17px;margin-bottom:30px}.number{font:12px var(--mono);color:var(--cyan);letter-spacing:2px}.section-head h2{font-size:27px;letter-spacing:-.5px;text-transform:uppercase;margin:0}.rule{height:1px;background:linear-gradient(90deg,var(--line),transparent);flex:1}
+.about-grid{display:grid;grid-template-columns:.75fr 1.25fr;gap:45px;align-items:center}
+.profile-card{min-height:260px;border:1px solid #1d4d6c;border-radius:16px;display:grid;place-items:center;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 45%,#145078,#0a1b31 55%,#07111e)}
+.profile-card:before{content:"BH";font-size:100px;font-weight:900;letter-spacing:-12px;color:#eafaff;text-shadow:0 0 28px #19d8f5aa}
+.profile-card:after{content:"CSE / AI & ML";position:absolute;bottom:15px;left:17px;color:#8abbd4;font:10px var(--mono);letter-spacing:3px}
+.about-copy p{color:var(--muted);font-size:14px;line-height:1.9;margin-top:0}.about-label{display:inline-block;color:var(--cyan);font:11px var(--mono);letter-spacing:2px;margin:8px 0 16px}
+.info-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:22px}.info{background:#0b1a2d;border:1px solid #1b3652;border-radius:9px;padding:12px 14px}.info small{display:block;color:#78a4c3;font:9px var(--mono);letter-spacing:2px}.info strong{font-size:13px}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:13px}.skill{background:linear-gradient(145deg,#10253d,#091626);border:1px solid #1c405e;border-radius:12px;padding:19px;min-height:118px;transition:.25s}.skill:hover{transform:translateY(-4px);border-color:var(--cyan);box-shadow:0 10px 28px #001b2e}.skill-icon{font-size:25px;color:var(--cyan)}.skill h3{font-size:14px;margin:12px 0 3px}.skill p{font:10px var(--mono);color:#819db7;margin:0}
+.edu-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:25px}.timeline{border-left:1px solid #2d5878;padding-left:24px}.entry{position:relative;margin-bottom:24px}.entry:before{content:"";position:absolute;left:-29px;top:7px;width:9px;height:9px;background:var(--cyan);border-radius:50%;box-shadow:0 0 12px #19d8f5}.entry small{font:10px var(--mono);letter-spacing:2px;color:var(--cyan)}.entry h3{font-size:16px;margin:7px 0}.entry p{font-size:13px;color:var(--muted);margin:0}
+.edu-side{border:1px solid #1b4563;background:linear-gradient(140deg,#102b45,#091626);padding:25px;border-radius:14px}.edu-side strong{font-size:18px}.edu-side p{color:var(--muted);font-size:13px;line-height:1.8}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:17px}.project{border:1px solid #1c405e;background:#0a1929;border-radius:13px;overflow:hidden;transition:.25s}.project:hover{transform:translateY(-5px);border-color:var(--cyan)}.project-art{height:150px;display:grid;place-items:center;font-size:58px;background:radial-gradient(circle at 50% 45%,#18516d,#091626 70%)}.project-art.green{background:radial-gradient(circle at 50% 45%,#275c48,#091b20 70%)}.project-body{padding:19px}.project-body small{font:10px var(--mono);letter-spacing:2px;color:var(--cyan)}.project-body h3{font-size:18px;margin:8px 0}.project-body p{font-size:13px;line-height:1.75;color:var(--muted);margin:0}
+.cert-box{border:1px dashed #28516e;background:#0a1929;border-radius:13px;padding:25px;color:var(--muted)}.cert-box strong{color:var(--text);display:block;margin-bottom:7px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}.contact-copy{color:var(--muted);max-width:420px;line-height:1.9}.contact-list{display:grid;gap:14px}.contact-item{display:flex;align-items:center;gap:14px;padding:14px;border:1px solid #1b3b56;background:#0a1929;border-radius:10px}.contact-icon{color:var(--cyan);font-size:20px;width:24px;text-align:center}.contact-item small{display:block;color:#79a6c2;font:9px var(--mono);letter-spacing:2px}.contact-item strong{font-size:13px;font-weight:500}.contact-item strong a{color:inherit;text-decoration:none;overflow-wrap:anywhere}.contact-item strong a:hover{color:var(--cyan)}.reveal-contact{border:1px solid var(--cyan);border-radius:20px;background:transparent;color:var(--cyan);padding:7px 11px;font:10px var(--mono);cursor:pointer}.reveal-contact:hover{background:var(--cyan);color:#04101d}
+footer{padding:27px 0;color:#7992a9;font:10px var(--mono);letter-spacing:1px}.footer-row{display:flex;justify-content:space-between;gap:20px}
+.reveal{opacity:0;transform:translateY(18px);transition:.7s}.reveal.visible{opacity:1;transform:none}
+@media(max-width:850px){.navlinks{gap:12px;font-size:10px}.hero{grid-template-columns:1fr;min-height:620px}.hero-side{min-height:150px}.about-grid{gap:25px}.skills{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){header{height:68px}.menu{display:block}.navlinks{display:none;position:absolute;top:67px;left:0;right:0;padding:22px 5%;background:#071525;flex-direction:column;align-items:flex-start;border-bottom:1px solid var(--line)}.navlinks.open{display:flex}.nav-cta{display:none}.hero{padding:68px 0 48px;min-height:630px}.hero:before{inset:0 -6vw;background-position:62% center;opacity:.8}h1{font-size:54px;letter-spacing:-3px}.hero-side{min-height:100px}.about-grid,.edu-grid,.contact-grid{grid-template-columns:1fr}.profile-card{min-height:190px}.skills{grid-template-columns:repeat(2,1fr)}.projects{grid-template-columns:1fr}.section-head h2{font-size:23px}section{padding:65px 0}.footer-row{flex-direction:column}}
+</style>
+</head>
+<body>
+<header><nav class="wrap">
+<a class="logo" href="#home">BH<span>.</span></a>
+<div class="navlinks" id="navlinks">
+<a href="#home">HOME</a><a href="#about">ABOUT</a><a href="#skills">SKILLS</a><a href="#education">EDUCATION</a><a href="#projects">PROJECTS</a><a href="#certificates">CERTIFICATES</a><a href="#contact">CONTACT</a>
+</div>
+<a class="nav-cta" href="#contact">GET IN TOUCH ↗</a><button class="menu" id="menu" aria-label="Open navigation">☰</button>
+</nav></header>
+<main>
+<div class="wrap hero" id="home">
+<div>
+<div class="eyebrow">WELCOME TO MY PORTFOLIO</div>
+<h1>Hi, I'm<br><span>Bonagiri Hemanth Reddy</span></h1>
+<p class="role">B.Tech CSE Student · AI & Machine Learning</p>
+<p class="intro">I’m a third-year Computer Science student exploring Artificial Intelligence, Machine Learning and software development. I enjoy learning new technologies and turning ideas into practical projects.</p>
+<div class="topic-row"><span class="topic">ARTIFICIAL INTELLIGENCE</span><span class="topic">MACHINE LEARNING</span><span class="topic">PYTHON</span></div>
+<a class="btn" href="#about">DISCOVER MORE ↓</a><a class="btn ghost" href="#projects">VIEW PROJECTS ↗</a>
+</div>
+<div class="hero-side"><div class="hero-note">LEARN · BUILD · EXPLORE<br><span style="color:var(--cyan)">AI & ML / PORTFOLIO 2026</span></div></div>
+</div>
+
+<section id="about"><div class="wrap reveal">
+<div class="section-head"><span class="number">(01)</span><h2>About Me</h2><div class="rule"></div></div>
+<div class="about-grid"><div class="profile-card" aria-label="Bonagiri Hemanth Reddy monogram"></div>
+<div class="about-copy"><span class="about-label">AI & ML STUDENT | ASPIRING DEVELOPER</span>
+<p>I am Bonagiri Hemanth Reddy, a third-year B.Tech student in Computer Science and Engineering. I am passionate about Artificial Intelligence and Machine Learning, and I enjoy exploring how technology can solve real-world problems.</p>
+<p>I believe in learning by doing. My current focus is to strengthen my technical foundation, practise programming, understand AI/ML concepts and build useful projects through hands-on experience.</p>
+<div class="info-grid">
+<div class="info"><small>DEGREE</small><strong>B.Tech · CSE</strong></div>
+<div class="info"><small>ACADEMIC YEAR</small><strong>Third Year</strong></div>
+<div class="info"><small>FOCUS</small><strong>AI & Machine Learning</strong></div>
+<div class="info"><small>MINDSET</small><strong>Keep Learning</strong></div>
+</div></div></div></div></section>
+
+<section id="skills"><div class="wrap reveal">
+<div class="section-head"><span class="number">(02)</span><h2>Skills & Interests</h2><div class="rule"></div></div>
+<p style="color:var(--muted);font-size:13px;margin-top:-15px;margin-bottom:25px">Core areas I am learning and practising as I grow in AI and Machine Learning.</p>
+<div class="skills">
+<div class="skill"><div class="skill-icon">✧</div><h3>Artificial Intelligence</h3><p>AI FOUNDATIONS</p></div>
+<div class="skill"><div class="skill-icon">◈</div><h3>Machine Learning</h3><p>ML CONCEPTS</p></div>
+<div class="skill"><div class="skill-icon">⌬</div><h3>Deep Learning</h3><p>NEURAL NETWORKS</p></div>
+<div class="skill"><div class="skill-icon">▦</div><h3>Computer Vision</h3><p>IMAGE AI</p></div>
+<div class="skill"><div class="skill-icon">⌘</div><h3>Python</h3><p>PROGRAMMING</p></div>
+<div class="skill"><div class="skill-icon">✳</div><h3>Generative AI</h3><p>LLM EXPLORATION</p></div>
+<div class="skill"><div class="skill-icon">▤</div><h3>Data Analysis</h3><p>DATA FUNDAMENTALS</p></div>
+<div class="skill"><div class="skill-icon">⌁</div><h3>Problem Solving</h3><p>CS FUNDAMENTALS</p></div>
+</div></div></section>
+
+<section id="education"><div class="wrap reveal">
+<div class="section-head"><span class="number">(03)</span><h2>Education & Learning</h2><div class="rule"></div></div>
+<div class="edu-grid"><div class="timeline">
+<div class="entry"><small>CURRENT · THIRD YEAR</small><h3>B.Tech — Computer Science & Engineering</h3><p>Currently pursuing my third year of undergraduate study.</p></div>
+<div class="entry"><small>LEARNING PATH</small><h3>Artificial Intelligence & Machine Learning</h3><p>Building knowledge in AI/ML concepts, Python programming and practical applications.</p></div>
+</div>
+<div class="edu-side"><strong>Always learning. Always building.</strong><p>My goal is to keep improving my technical foundation, gain hands-on experience and create projects that apply AI and Machine Learning to meaningful problems.</p><span class="about-label">GROWTH THROUGH PRACTICE</span></div></div></div></section>
+
+<section id="projects"><div class="wrap reveal">
+<div class="section-head"><span class="number">(04)</span><h2>Projects</h2><div class="rule"></div></div>
+<p style="color:var(--muted);font-size:13px;margin-top:-15px;margin-bottom:25px">A selection of project work and concepts connected to my learning interests.</p>
+<div class="projects">
+<article class="project"><div class="project-art green">🍃</div><div class="project-body"><small>AI / AGRICULTURE</small><h3>AI-Based Banana Waste Classification</h3><p>Using image-classification concepts to identify banana waste and explore how agricultural waste can be directed towards biodegradable products.</p></div></article>
+<article class="project"><div class="project-art">✳</div><div class="project-body"><small>GENERATIVE AI / LEARNING CONCEPT</small><h3>RAG-Based Knowledge Assistant</h3><p>Exploring retrieval-augmented generation and how a language model can answer questions using relevant information from documents.</p></div></article>
+</div></div></section>
+
+<section id="certificates"><div class="wrap reveal">
+<div class="section-head"><span class="number">(05)</span><h2>Certificates & Learning</h2><div class="rule"></div></div>
+<div class="cert-box">
+<strong>Introduction to Generative AI</strong>
+<p style="margin:8px 0 16px">Completed online course · Simplilearn SkillUp · Powered by Google Cloud</p>
+<img src="assets/introduction-to-generative-ai-certificate.jpg" alt="Introduction to Generative AI course completion certificate for Bonagiri Hemanth Reddy" style="display:block;width:100%;max-width:900px;height:auto;border-radius:8px;border:1px solid #28516e;margin:0 0 18px">
+<a class="btn" href="assets/introduction-to-generative-ai-certificate.jpg" target="_blank" rel="noopener noreferrer">VIEW CERTIFICATE ↗</a>
+</div>
+</div></section>
+
+<section id="contact"><div class="wrap reveal">
+<div class="section-head"><span class="number">(06)</span><h2>Contact</h2><div class="rule"></div></div>
+<div class="contact-grid"><div><h2 style="font-size:clamp(30px,5vw,48px);line-height:1.1">LET'S CONNECT<br><span style="color:var(--cyan)">AND CREATE.</span></h2><p class="contact-copy">I’m interested in learning, collaborating and exploring opportunities to work on technology and AI/ML projects. Add your contact details below to make it easy for people to reach you.</p></div>
+<div class="contact-list">
+<div class="contact-item"><span class="contact-icon">☎</span><div style="flex:1"><small>PHONE</small><strong id="phone-value">••••••••••</strong></div><button type="button" class="reveal-contact" id="show-phone">Show number</button></div>
+<div class="contact-item"><span class="contact-icon">✉</span><div><small>EMAIL</small><strong><a href="mailto:hemanthreddy@gmail.com">hemanthreddy@gmail.com</a></strong></div></div>
+<div class="contact-item"><span class="contact-icon">⌘</span><div><small>GITHUB</small><strong><a href="https://github.com/hemanthreddy2337" target="_blank" rel="noopener noreferrer">github.com/hemanthreddy2337</a></strong></div></div>
+<div class="contact-item"><span class="contact-icon">in</span><div><small>LINKEDIN</small><strong><a href="https://www.linkedin.com/in/hemanth-reddy-04080032a" target="_blank" rel="noopener noreferrer">linkedin.com/in/hemanth-reddy-04080032a</a></strong></div></div>
+</div></div></div></section>
+</main>
+<footer><div class="wrap footer-row"><span>© 2026 BONAGIRI HEMANTH REDDY</span><span>DESIGNED FOR LEARNING & GROWTH · AI / ML</span></div></footer>
+<script>
+const menu=document.getElementById('menu'),nav=document.getElementById('navlinks');
+menu.addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+const phoneButton=document.getElementById('show-phone');
+phoneButton.addEventListener('click',()=>{document.getElementById('phone-value').textContent='7337576399';phoneButton.textContent='Shown';phoneButton.disabled=true;});
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body></html>
